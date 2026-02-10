@@ -27,7 +27,7 @@ const Contacts = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      await axios.post(`${process.env.REACT_APP_BACK_URL}/api/contact`, formData);
+      await axios.post("http://localhost:6321/api/contact", formData);
       toast.success(
         "Your message was sent successfully. We’ll be in touch soon.",
       );
